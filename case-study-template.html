@@ -1,0 +1,215 @@
+<!-- IIIT-H Technology Portfolio Case Study Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: IIIT-H Technology Portfolio Platform - Yuvaraj Gajalajamgam</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <a href="index.html" class="logo">Yuvaraj G.</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="project.html" class="active">Projects</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="case-study-hero">
+        <div class="container">
+            <h1>IIIT-H Technology Portfolio Platform</h1>
+            <p class="subtitle">
+                An interactive platform that organizes IIIT Hyderabad’s research, publications, and patents into a unified,
+                searchable, insight-driven technology portfolio.
+            </p>
+            <img src="images/iiith2.png" alt="IIIT-H Technology Portfolio Hero Image">
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="case-study-content">
+
+            <!-- SUMMARY BOX -->
+            <div class="project-summary-box">
+                <div class="summary-item">
+                    <h4>My Role</h4>
+                    <p>Product Strategy, ML Engineering, Dashboard Design</p>
+                </div>
+                <div class="summary-item">
+                    <h4>Category</h4>
+                    <p>Product Case Study</p>
+                </div>
+                <div class="summary-item">
+                    <h4>Duration</h4>
+                    <p>12 Weeks (Summer 2025)</p>
+                </div>
+                <div class="summary-item">
+                    <h4>Tools & Tech</h4>
+                    <p>Figma, Python, Qwen-2.5, Gemini, Grok, HTML/CSS/JS</p>
+                </div>
+            </div>
+
+            <!-- PROBLEM -->
+            <h2>The Problem / Objective</h2>
+            <p>
+                IIIT Hyderabad produces hundreds of high-impact research papers and patents every year. However, this information
+                was scattered across websites, PDFs, research center pages, and TTO documentation—making it difficult for:
+                <br>• Industry partners to evaluate technologies
+                <br>• Investors to identify commercialization-ready research
+                <br>• Students and researchers to discover relevant work
+                <br>• TTO to showcase IP for collaboration/licensing
+                <br><br>
+                The goal was to build a unified, interactive platform that organizes all publications and patents into a structured,
+                searchable, decision-ready technology portfolio.
+            </p>
+
+            <!-- DISCOVERY -->
+            <h2>Discovery & Research</h2>
+            <p>
+                I conducted interviews, reviewed datasets, and analyzed institutional research workflows.
+                It became evident that the issue wasn’t a lack of research output—but the absence of a standardized,
+                discoverable structure for presenting it.
+            </p>
+
+            <div class="callout-box insight">
+                <p>
+                    <strong>Key Insight:</strong> The challenge wasn’t missing information—IIIT-H had 257 publications and 104 patents.
+                    The real gap was the lack of structured classification linking research → markets → readiness → application domains.
+                </p>
+            </div>
+
+            <ul>
+                <li>Analyzed 257 publications and 104 patents to extract TRL, market potential, trends, and research centers.</li>
+                <li>Reviewed TTO resources, licensing cases, and center-level research portfolios.</li>
+                <li>Unified fragmented XLSX, PPTX, PDF, and GitHub datasets into one classification framework.</li>
+                <li>Generated structured metadata using Grok, Gemini, and custom scripts.</li>
+            </ul>
+
+            <!--
+            <div class="image-gallery two-col">
+                <img src="images/placeholder-persona.png" alt="User Research Persona">
+                <img src="images/placeholder-journey-map.png" alt="User Journey Map">
+            </div>
+            -->
+
+            <!-- SOLUTION -->
+            <h2>Solution & Design Process</h2>
+            <p>
+                I designed a complete end-to-end platform that enables:
+                <br>• Interactive dashboards for trends, TRL, and market activity
+                <br>• Publication & patent explorers with multi-layer filtering
+                <br>• Strategic insight heatmaps (industries, SDGs, product applications)
+                <br>• Technology detail pages with structured metadata
+                <br>• Global search across all research outputs
+            </p>
+            <!--
+            <div class="image-gallery two-col">
+                <img src="images/placeholder-figma-lowfi.png" alt="Low-fidelity mockups">
+                <img src="images/placeholder-figma-hifi.png" alt="High-fidelity mockups">
+            </div>
+            -->
+
+            <!-- TECH CHALLENGES -->
+            <h2>Architecture & Technical Challenges</h2>
+            <p>
+                The platform integrates structured JSON datasets with custom-built JS visualizations and search components.
+                The front-end was designed to remain lightweight while supporting multi-dimensional filters and interactive charts.
+            </p>
+
+            <div class="callout-box challenge">
+                <p>
+                    <strong>Technical Challenge:</strong> Standardizing heterogeneous research formats was the hardest part. Publication PDFs,
+                    patent metadata, and AI-generated scores were all inconsistent. I solved this by designing a unified 4-D classification framework:
+                    Technology Trend, TRL, Market Potential, and Market Activity.
+                </p>
+            </div>
+
+            <!-- ANALYSIS -->
+            <h2>Analysis & Strategic Recommendations</h2>
+            <p>
+                The research revealed strong institutional alignment with high-growth sectors like Healthcare, Smart Cities,
+                Robotics, and Autonomous Vehicles. Patents displayed higher commercial readiness compared to publications.
+            </p>
+
+            <div class="callout-box">
+                <p>
+                    <strong>Recommendation:</strong> Build an AI-powered collaboration recommender that connects industry partners
+                    with relevant technologies based on TRL, market potential, and sector alignment. Integrate analytics (via Microsoft Clarity)
+                    to optimize user navigation.
+                </p>
+            </div>
+
+            <!-- RESULTS -->
+            <h2>Results & Impact</h2>
+            <p>The platform consolidated IIIT-H’s research into a single, decision-ready interface.</p>
+
+            <div class="metric-grid">
+                <div class="metric-item">
+                    <h3>95%+</h3>
+                    <p>Accuracy in structured classification</p>
+                </div>
+                <div class="metric-item">
+                    <h3>257 + 104</h3>
+                    <p>Publications & Patents integrated into the platform</p>
+                </div>
+                <div class="metric-item">
+                    <h3>12+</h3>
+                    <p>Major domains mapped to industries & SDGs</p>
+                </div>
+                <div class="metric-item">
+                    <h3>1 Platform</h3>
+                    <p>Unified source of truth for all stakeholders</p>
+                </div>
+            </div>
+
+            <!-- LEARNINGS -->
+            <h2>Learnings & Next Steps</h2>
+            <div class="callout-box">
+                <p>
+                    <strong>Lesson Learned:</strong> Information architecture is crucial when dealing with fragmented academic data.
+                    Building a unified classification system transformed the platform’s usability and strategic value.
+                </p>
+            </div>
+
+            <p>
+                Next steps include:
+                <br>• Add feedback loops and heatmap-based UX optimizations
+                <br>• Expand with data from 2025–2026
+                <br>• Automate publications/patent ingestion using LLM extractors
+                <br>• Launch an industry-facing discovery mode with personalized recommendations
+            </p>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-contact">
+            <p>Let's connect:</p>
+            <a href="mailto:yuvaraj.gajalajamgam@students.iiit.ac.in">yuvaraj.gajalajamgam@students.iiit.ac.in</a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Yuvaraj Gajalajamgam. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

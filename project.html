@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Yuvaraj Gajalajamgam</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* This just modifies the project grid for a gallery view */
+        #project-gallery .project-grid {
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        #project-gallery .project-card {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #project-gallery .project-image {
+            width: 100%;
+        }
+        
+        #project-gallery .project-image img {
+            height: 220px;
+        }
+        
+        /* Section heading for categories */
+        .category-heading {
+            color: var(--color-headings);
+            font-size: 2.25rem;
+            margin-top: 20px; 
+            margin-bottom: 30px;
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 15px;
+        }
+        
+        /* New integrated page header */
+        .main-content-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--color-headings);
+        }
+        .main-content-header p {
+            font-size: 1.15rem;
+            color: var(--color-body);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Yuvaraj G.</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="project.html" class="active">Projects</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container page-layout">
+
+            <aside class="sidebar">
+                <h4>Categories</h4>
+                <nav>
+                    <ul>
+                        <li><a href="#category-case-studies" class="active">Product Case Studies</a></li>
+                        <li><a href="#category-technical">Technical & Development</a></li>
+                        <li><a href="#category-analysis">Entrepreneurial & Analysis</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <div class="main-content" id="project-gallery">
+                
+                <div class="main-content-header">
+                    <h1>My Projects</h1>
+                    <p>A collection of my work in product, AI/ML, and full-stack development. Here’s a look at the problems I've solved and the products I've built.</p>
+                </div>
+
+                <h2 class="category-heading" id="category-case-studies">Product Case Studies</h2>
+                <div class="project-grid">
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/home.png" alt="MindMastery App Screenshot">
+                        </div>
+                        <div class="project-content">
+                            <h4>Product Strategy, ML Engineering</h4>
+                            <h3>MindMastery - Adaptive Learning Platform</h3>
+                            <p>
+                                <strong>Problem:</strong> NEET/UPSC aspirants lack personalized, efficient tools for self-study and memory retention from large PDF content.
+                            </p>
+                            <a href="project-mindmastery.html" class="btn btn-primary">View Case Study</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/IIIT.png" alt="IIIT-H Technology Portfolio Dashboard">
+                        </div>
+                        <div class="project-content">
+                            <h4>Product Lead, Full-Stack Development</h4>
+                            <h3>IIIT-H Technology Portfolio Platform</h3>
+                            <p>
+                                <strong>Problem:</strong> 250+ research papers and 100+ patents at IIIT-H were invisible to stakeholders, hindering commercialization.
+                            </p>
+                            <a href="case-study-template.html" class="btn btn-primary">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2 class="category-heading" id="category-technical">Technical & Development Projects</h2>
+                <div class="project-grid">
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project-semantic.jpeg" alt="Semantic Code Search">
+                        </div>
+                        <div class="project-content">
+                            <h4>ML Pipeline, Product Development</h4>
+                            <h3>Semantic Code Retrieval System</h3>
+                            <p>
+                            <strong>Product:</strong> An ML-powered search app using MiniLM-L3 and FAISS to find code by what it does*, not just keywords.
+                            </p>
+                            <a href="technical-project-template.html" class="btn btn-primary">View Technical Details</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <h2 class="category-heading" id="category-analysis">Entrepreneurial & Product Analysis</h2>
+                <div class="project-grid">
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/reformer.png" alt="Product Teardown Analysis">
+                        </div>
+                        <div class="project-content">
+                            <h4>Patent Contributor</h4>
+                            <h3>IoT-based Photobioreactor</h3>
+                            <p>
+                                <strong>The Innovation:</strong> An IoT-enabled artificial-photosynthesis bioreactor designed to grow microalgae efficiently while converting CO₂ into bio-fertilizers and oxygen.
+                            </p>
+                            <a href="iot.html" class="btn btn-primary">Read Analysis</a>
+                        </div>
+                    </div>
+                       <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/spicen.png" alt="Product Teardown Analysis">
+                        </div>
+                        <div class="project-content">
+                            <h4>Patent Contributor</h4>
+                            <h3>SpiCEN: Micro Algae-based Carbon Emission Neutralizer</h3>
+                            <p>
+                                <strong>The Innovation:</strong> A next-gen photobioreactor using artificial photosynthesis and IoT control to neutralize carbon emissions with highly efficient Spirulina cultivation.
+                            </p>
+                            <a href="spicen.html" class="btn btn-primary">Read Analysis</a>
+                        </div>
+                    </div>
+                                       <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/stp.jpg" alt="Product Teardown Analysis">
+                        </div>
+                        <div class="project-content">
+                            <h4>Patent Contributor</h4>
+                            <h3>Algae-Based Sewage Treatment Plant</h3>
+                            <p>
+                                <strong>The Innovation:</strong> A chemically-free microalgae-driven sewage treatment system with IoT monitoring, enabling sustainable water purification and biomass generation.
+                            </p>
+                            <a href="sewage.html" class="btn btn-primary">Read Analysis</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div> </div> </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-contact">
+                <p>Let's connect:</p>
+                <a href="mailto:yuvaraj.gajalajamgam@students.iiit.ac.in">yuvaraj.gajalajamgam@students.iiit.ac.in</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Yuvaraj Gajalajamgam. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

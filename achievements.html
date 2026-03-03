@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements - Yuvaraj Gajalajamgam</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Re-using the project gallery styles for the achievements grid */
+        #achievements-gallery .achievement-grid {
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            display: grid;
+            gap: 30px;
+        }
+
+        /* Re-using the project card style for each achievement */
+        #achievements-gallery .project-card {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #achievements-gallery .project-image {
+            width: 100%;
+        }
+        
+        #achievements-gallery .project-image img {
+            height: 220px;
+            object-fit: cover; /* Ensures images fit well */
+        }
+        
+        /* Section heading for categories */
+        .category-heading {
+            color: var(--color-headings);
+            font-size: 2.25rem;
+            margin-top: 20px; 
+            margin-bottom: 30px;
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 15px;
+        }
+        
+        /* New integrated page header */
+        .main-content-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--color-headings);
+        }
+        .main-content-header p {
+            font-size: 1.15rem;
+            color: var(--color-body);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Yuvaraj G.</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="achievements.html" class="active">Achievements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container page-layout">
+
+            <aside class="sidebar">
+                <h4>Categories</h4>
+                <nav>
+                    <ul>
+                        <li><a href="#category-entrepreneurship" class="active">Entrepreneurship</a></li>
+                        <li><a href="#category-technical">Technical & Innovation</a></li>
+                        <li><a href="#category-academic">Academic & Honors</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <div class="main-content" id="achievements-gallery">
+                
+                <div class="main-content-header">
+                    <h1>My Achievements</h1>
+                    <p>A collection of my awards and recognitions in entrepreneurship, technology, and academics.</p>
+                </div>
+
+                <h2 class="category-heading" id="category-entrepreneurship">Entrepreneurship</h2>
+                <div class="achievement-grid">
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/gseaap.jpg" alt="GSEA EO Award">
+                        </div>
+                        <div class="project-content">
+                            <h4>First Place</h4>
+                            <h3>GSEA, EO - Hyderabad Chapter</h3>
+                            <p>
+                                Advanced from the GSEA EO-Andhra Pradesh Chapter 2023-24 and qualified for the national level.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/a2.jpeg" alt="AMRUT 2.0">
+                        </div>
+                        <div class="project-content">
+                            <h4>1 of 76 Startups</h4>
+                            <h3>AMRUT 2.0, MOHUA</h3>
+                            <p>
+                                Kephi Innovations was selected for a grant to implement and demonstrate our solution, AQUA-REFORMER.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/isnt_award.png" alt="BIRAC, E-YUVA">
+                        </div>
+                        <div class="project-content">
+                            <h4>Grant Recipient</h4>
+                            <h3>BIRAC, E-YUVA, Atmiya University</h3>
+                            <p>
+                                Received the BIRAC E-YUVA grant for fostering innovation in biotechnology.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <h2 class="category-heading" id="category-technical">Technical & Innovation</h2>
+                <div class="achievement-grid">
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/xprize1.png" alt="XPRIZE Carbon Removal">
+                        </div>
+                        <div class="project-content">
+                            <h4>Qualified Competitor</h4>
+                            <h3>XPRIZE Carbon Removal</h3>
+                            <p>
+                                Proud to be 1 of 1,133 teams qualified for the $100M XPRIZE to create real solutions for carbon removal.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/cisco1.jpeg" alt="CISCO Global Problem Solver Challenge">
+                        </div>
+                        <div class="project-content">
+                            <h4>Semi-finalists</h4>
+                            <h3>CISCO Global Problem Solver Challenge</h3>
+                            <p>
+                                Team Helix was a semi-finalist (top 94 of 1200) for our AQUA-REFORMER product concept.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/a1.jpeg" alt="Samsung Solve for Tomorrow">
+                        </div>
+                        <div class="project-content">
+                            <h4>Top 50</h4>
+                            <h3>Solve for Tomorrow, Samsung INDIA</h3>
+                            <p>
+                                Selected as one of the top 50 teams in Samsung's Gen-Z education and innovation competition.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/robo1.jpeg" alt="Robothon Contest MCEME">
+                        </div>
+                        <div class="project-content">
+                            <h4>Best Expo Project</h4>
+                            <h3>Robothon Contest, MCEME</h3>
+                            <p>
+                                Won a cash award and the title of Best Expo Project at the Military College of EME's Robothon Contest 2021.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <h2 class="category-heading" id="category-academic">Academic & Honors</h2>
+                <div class="achievement-grid">
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/placeholder-nae.png" alt="US National Academy of Engineering">
+                        </div>
+                        <div class="project-content">
+                            <h4>Minor Graduate</h4>
+                            <h3>Grand Challenges Scholars Program, NAE</h3>
+                            <p>
+                                Recognized by the US National Academy of Engineering as a Minor Graduate of the Grand Challenges Scholars Program.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> </div> </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-contact">
+                <p>Let's connect:</p>
+                <a href="mailto:yuvaraj.gajalajamgam@students.iiit.ac.in">yuvaraj.gajalajamgam@students.iiit.ac.in</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Yuvaraj Gajalajamgam. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

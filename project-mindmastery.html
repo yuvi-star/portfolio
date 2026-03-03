@@ -1,0 +1,175 @@
+<!-- Merged MindMastery Case Study Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: MindMastery - Yuvaraj Gajalajamgam</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <a href="index.html" class="logo">Yuvaraj G.</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="project.html" class="active">Projects</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="case-study-hero">
+        <div class="container">
+            <h1>MindMastery – Personalized Learning & Memory Platform</h1>
+            <p class="subtitle">An adaptive EdTech system that auto-generates personalized quizzes from PDFs and helps NEET/UPSC aspirants master large syllabi using spaced repetition and smart flashcards.</p>
+            <img src="images/mind3.png" alt="MindMastery Hero Image">
+            
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="case-study-content">
+
+            <div class="project-summary-box">
+                <div class="summary-item">
+                    <h4>My Role</h4>
+                    <p>Product Strategy, ML Engineering</p>
+                </div>
+                <div class="summary-item">
+                    <h4>Category</h4>
+                    <p>Product Case Study</p>
+                </div>
+                <div class="summary-item">
+                    <h4>Duration</h4>
+                    <p>12 Weeks (2024)</p>
+                </div>
+                <div class="summary-item">
+                    <h4>Tools & Tech</h4>
+                    <p>Figma, Python, Qwen 2.5–7B, Spaced Repetition</p>
+                </div>
+                <div class="summary-item">
+                    <a href="https://docs.google.com/document/d/1jp8IE-qak8eKze9NK2Cwa8AetBVK_hhTzI-CglMhVZI/edit?usp=sharing" class="btn btn-primary">Access Report</a>
+                </div>
+            </div>
+
+            <h2>The Problem / Objective</h2>
+            <p>
+                NEET and UPSC aspirants study from massive, 800–1200+ page PDFs. Their review workflow relies heavily on passive re-reading or manual flashcard creation, which is slow and inefficient. They struggle with:
+                <br>• Long-term retention
+                <br>• Structured preparation
+                <br>• Progress tracking
+                <br>• Consistent review cycles
+                <br><br>
+                MindMastery solves this by generating personalized quizzes directly from PDFs using LLM-powered chunking and spaced repetition.
+            </p>
+
+            <h2>Discovery & Research</h2>
+            <p>To validate the problem, we conducted user research with 50+ aspirants.</p>
+            <div class="callout-box insight">
+                <p><strong>Key Insight:</strong> The biggest pain point wasn't lack of content — it was lack of *efficient active recall*. Students needed structured review, not more reading.</p>
+            </div>
+
+            <ul>
+                <li>Interviewed <strong>50+ NEET/UPSC aspirants</strong></li>
+                <li>Compared tools like Anki, Toppr, and Unacademy</li>
+                <li>Mapped personas and user journeys highlighting high-friction areas</li>
+            </ul>
+
+            <div class="image-gallery two-col">
+                <img src="images/mindpersona.png" alt="User Persona">
+                <img src="images/mindcjm.png" alt="User Journey Map">
+            </div>
+
+            <h2>Solution & Design Process</h2>
+            <p>
+                The solution is an adaptive platform that:
+                <br>• Extracts content from PDFs
+                <br>• Applies semantic chunking
+                <br>• Auto-generates quizzes using local LLMs
+                <br>• Tracks retention and schedules reviews with spaced repetition
+            </p>
+
+            <div class="image-gallery two-col">
+                <img src="images/mindlf.png" alt="Low-fidelity mockups">
+                <img src="images/mindhf.png" alt="High-fidelity mockups">
+            </div>
+
+            <h2>Architecture & Technical Challenges</h2>
+            <p>
+                The platform involves PDF parsing, semantic chunking, LLM-based question generation, spaced repetition scheduling, and analytics dashboards.
+            </p>
+            <div class="callout-box challenge">
+                <p><strong>Technical Challenge:</strong> Simple PDF splitting failed. Implementing semantic chunking (context-aware block detection) significantly improved LLM output quality and accuracy of generated questions.</p>
+            </div>
+
+            <h2>Analysis & Strategic Recommendations</h2>
+            <p>
+                Strategic next steps include gamification, community decks, and school/academy partnerships.
+            </p>
+            <div class="callout-box">
+                <p><strong>Recommendation:</strong> Introduce community-created flashcard decks and AI-powered learning streaks to boost engagement and retention.</p>
+            </div>
+
+            <h2>Results & Impact</h2>
+            <p>Validated strong user need and performance improvement.</p>
+            <div class="metric-grid">
+                <div class="metric-item">
+                    <h3>50+</h3>
+                    <p>Aspirants interviewed</p>
+                </div>
+                <div class="metric-item">
+                    <h3>90%</h3>
+                    <p>Reduced effort in creating study material</p>
+                </div>
+                <div class="metric-item">
+                    <h3>Qwen 7B</h3>
+                    <p>Local LLM for private quiz generation</p>
+                </div>
+                <div class="metric-item">
+                    <h3>75%</h3>
+                    <p>Improved reporting efficiency</p>
+                </div>
+            </div>
+
+            <h2>Learnings & Next Steps</h2>
+            <div class="callout-box">
+                <p><strong>Lesson Learned:</strong> LLM output quality heavily depends on chunking. Context-preserving splits yield far better quiz accuracy than uniform slicing.</p>
+            </div>
+            <p>
+                Next steps include:
+                <br>• Gamification & leaderboards
+                <br>• Community-driven decks
+                <br>• Mobile app version
+                <br>• B2B integrations with coaching centers
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-contact">
+            <p>Let's connect:</p>
+            <a href="mailto:yuvaraj.gajalajamgam@students.iiit.ac.in">yuvaraj.gajalajamgam@students.iiit.ac.in</a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Yuvaraj Gajalajamgam. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
